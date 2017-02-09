@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>686</width>
+    <height>573</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Recorder</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources/analyzer.qrc">
+    <normaloff>:/images-src/window-icon.svg</normaloff>:/images-src/window-icon.svg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionStart"/>
+   <addaction name="actionAbout"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>686</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <action name="actionStart">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resources/analyzer.qrc">
+     <normaloff>:/images-src/stop.svg</normaloff>
+     <normalon>:/images-src/start.svg</normalon>
+     <disabledon>:/images-src/start.svg</disabledon>
+     <selectedon>:/images-src/stop.svg</selectedon>:/images-src/stop.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+   <property name="toolTip">
+    <string>Start/Stop</string>
+   </property>
+   <property name="shortcut">
+    <string>Space</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="../resources/analyzer.qrc">
+     <normaloff>:/images-src/window-icon.svg</normaloff>:/images-src/window-icon.svg</iconset>
+   </property>
+   <property name="text">
+    <string>About Recorder</string>
+   </property>
+   <property name="toolTip">
+    <string>About Recorder</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resources/analyzer.qrc"/>
+ </resources>
+ <connections/>
+</ui>
